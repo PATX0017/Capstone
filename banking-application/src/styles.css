@@ -1,1 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
+.signup {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+
+.primarybalance {
+    padding: 10px;
+    border: 2px solid black;
+    background-color: lightblue;
+    width: 50;
+    text-align: center;
+}
+
+.viewdetailspb {
+    padding: 2px;
+    background-color: lightgrey;
+    width: 100;
+}
+
+.view-details-arrow {
+    display: flex;
+    -webkit-box-align: end;
+}
+
+.savingsbalance {
+    padding: 10px;
+    border: 2px solid black;
+    background-color: rgb(100, 169, 100);
+    width: 50;
+    text-align: center;
+}
+
+.viewdetailssb {
+    padding: 2px;
+    background-color: lightgrey;
+    width: 100;
+}
+
+.credit-card-img {
+    width: 50px;
+}
+
+.deposit {
+    padding: 10px;
+    border: 2px solid black;
+    background-color: white;
+    width: 50;
+    text-align: center;
+}
+
+.go-to-deposit {
+    padding: 2px;
+    background-color: lightgrey;
+    width: 100;
+}
+
+.withdraw-img {
+    width: 50px;
+}
+
+.withdrawl {
+    padding: 10px;
+    border: 2px solid black;
+    background-color: white;
+    width: 50;
+    text-align: center;
+}
+
+.go-to-withdrawal {
+    padding: 2px;
+    background-color: lightgrey;
+    width: 100;
+}
+
+
+        
+
+    
