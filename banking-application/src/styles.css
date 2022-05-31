@@ -4,7 +4,15 @@
     left: 50%;
 }
 
-.primarybalance {
+/*  This is how we can apply a background color to all pages simultaneously.
+.pagewrapper{
+    overflow: hidden;
+    background: #751313;
+    padding-bottom: 8vh;
+}
+*/
+
+.checkingbalance {
     padding: 10px;
     border: 2px solid black;
     background-color: lightblue;
@@ -67,7 +75,7 @@
     text-align: center;
 }
 
-.go-to-withdrawal {
+.go-to-withdrawl {
     padding: 2px;
     background-color: lightgrey;
     width: 100;
