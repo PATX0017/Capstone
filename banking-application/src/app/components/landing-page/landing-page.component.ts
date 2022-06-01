@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BankService } from 'src/app/services/bank.service';
+import { Account } from 'src/app/common/account';
 
 @Component({
   selector: 'app-landing-page',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor() { }
+  account!: Account;
+
+  constructor(private bankService: BankService) { }
 
   ngOnInit(): void {
+
+  }
+
+  getAccountInfo(accountId: number) {
+    this.bankService.getAccountInfo(accountId);
   }
 
 }
