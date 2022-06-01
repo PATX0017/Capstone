@@ -14,6 +14,11 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
+/*Export class landing page*/
+export class app{
+  
+}
+
 
 const routes: Routes = [
 
