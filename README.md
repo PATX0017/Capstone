@@ -107,12 +107,16 @@ Minimal usage requirements
     - [ ] Lets add more taskings for the road map
     - [ ] Clean up UI
 - [] DevOps Tasks
-    - [X] Create Repositories
+    - [X] Create repositories
     - [X] Send invites for collabs
     - [ ] Lets add more taskings for the road map
 - [ ] Quality Assurance
-- [ ] Merge to 'master'
 - [ ] Add additional features
+- [ ] Presentation
+     - [ ] Outline presentation
+     - [ ] Add texting
+     - [ ] Collect/add photos
+     - [ ] Runthrough with team for proofreading
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
