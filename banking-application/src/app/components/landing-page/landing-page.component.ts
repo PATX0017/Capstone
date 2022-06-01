@@ -14,7 +14,7 @@ export class LandingPageComponent implements OnInit {
   constructor(private bankService: BankService) { }
 
   ngOnInit(): void {
-
+    this.getAccountInfo(1);
   }
 
   getAccountInfo(accountId: number) {
