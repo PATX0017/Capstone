@@ -106,7 +106,7 @@ Minimal usage requirements
     - [X] Create shell
     - [ ] Lets add more taskings for the road map
     - [ ] Clean up UI
-- [] DevOps Tasks
+- [ ] DevOps Tasks
     - [X] Create repositories
     - [X] Send invites for collabs
     - [ ] Lets add more taskings for the road map
