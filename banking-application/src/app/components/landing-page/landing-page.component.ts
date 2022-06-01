@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BankService } from 'src/app/services/bank.service';
 import { Account } from 'src/app/common/account';
+import { ActivatedRoute } from '@angular/router';
 
 
 
@@ -13,10 +14,13 @@ export class LandingPageComponent implements OnInit {
 
   account = new Account();
 
-  constructor(private bankService: BankService) { }
+  constructor(private bankService: BankService,
+    private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.bankService.getSpecificAccount(1).subscribe(res => { this.account = res });
+    //accounts/:id = account/2
+    const number: number = +this.route.snapshot.paramMap.get('id')!;
+    this.bankService.getSpecificAccount(number).subscribe(res => { this.account = res });
 
   }
 
