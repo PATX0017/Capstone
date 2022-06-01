@@ -14,7 +14,11 @@ export class BankService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getAccountInfo(accountNumber: number) {
-    return this.httpClient.get(this.baseUrl + accountNumber);
+  getAccountInfo(): Observable<Account[]> {
+    return this.httpClient.get<Account[]>(this.baseUrl + "accounts");
+  }
+
+  getSpecificAccount(accNum: number): Observable<Account> {
+    return this.httpClient.get<Account>(this.baseUrl + "account/" + accNum);
   }
 }

@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
-import { LoginComponent } from './components/login/login.component';
 import { DepositComponent } from './components/deposit/deposit.component';
 import { WithdrawalComponent } from './components/withdrawal/withdrawal.component';
 import { CheckingsComponent } from './components/checkings/checkings.component';
@@ -13,21 +12,23 @@ import { SavingsComponent } from './components/savings/savings.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { AdminPortalComponent } from './components/admin-portal/admin-portal.component';
 
 /*Export class landing page*/
-export class app{
-  
+export class app {
+
 }
 
 
 const routes: Routes = [
 
-  { path: '', component: LandingPageComponent },
-  { path: 'savings', component: SavingsComponent },
-  { path: 'checkings', component: CheckingsComponent },
-  { path: 'deposit', component: DepositComponent },
-  { path: 'withdraw', component: WithdrawalComponent },
-  { path: 'profile', component: ProfileComponent },
+  { path: '', component: AdminPortalComponent },
+  { path: 'account/:id', component: LandingPageComponent },
+  { path: 'account/:id/savings', component: SavingsComponent },
+  { path: 'account/:id/checkings', component: CheckingsComponent },
+  { path: 'account/:id/deposit', component: DepositComponent },
+  { path: 'account/:id/withdraw', component: WithdrawalComponent },
+  { path: 'account/:id/profile', component: ProfileComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 
 ]
@@ -41,12 +42,12 @@ const routes: Routes = [
     AppComponent,
     NavBarComponent,
     LandingPageComponent,
-    LoginComponent,
     DepositComponent,
     WithdrawalComponent,
     CheckingsComponent,
     SavingsComponent,
     ProfileComponent,
+    AdminPortalComponent,
 
   ],
   imports: [

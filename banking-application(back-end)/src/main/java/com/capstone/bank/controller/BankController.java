@@ -3,6 +3,7 @@ package com.capstone.bank.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,15 +23,18 @@ public class BankController {
 	
 	@GetMapping("/account/{accountNumber}")
 	@ResponseBody
+	@CrossOrigin(origins="*")
 	public BankAccount getAccount(@PathVariable(value = "accountNumber") Long accountNumber) {
 		return service.getBankAccount(accountNumber);
 	}
 	@GetMapping("/accounts")
+	@CrossOrigin(origins="*")
 	public List<BankAccount> getAllAccounts() {
 		return service.getAllBankAccounts();
 	}
 	
 	@PostMapping("/add_account")
+	@CrossOrigin(origins="*")
 	public BankAccount addAccount(@RequestBody BankAccount bankAccount) {
 		return service.addBankAccount(bankAccount);
 	}

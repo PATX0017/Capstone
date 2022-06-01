@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { BankService } from 'src/app/services/bank.service';
 import { Account } from 'src/app/common/account';
 
+
+
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
@@ -9,16 +11,15 @@ import { Account } from 'src/app/common/account';
 })
 export class LandingPageComponent implements OnInit {
 
-  account!: Account;
+  account = new Account();
 
   constructor(private bankService: BankService) { }
 
   ngOnInit(): void {
-    this.getAccountInfo(1);
+    this.bankService.getSpecificAccount(1).subscribe(res => { this.account = res });
+
   }
 
-  getAccountInfo(accountId: number) {
-    this.bankService.getAccountInfo(accountId);
-  }
+
 
 }
