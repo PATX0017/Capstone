@@ -13,6 +13,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminPortalComponent } from './components/admin-portal/admin-portal.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
 
 /*Export class landing page*/
 export class app {
@@ -48,6 +49,7 @@ const routes: Routes = [
     SavingsComponent,
     ProfileComponent,
     AdminPortalComponent,
+    HomePageComponent,
 
   ],
   imports: [
