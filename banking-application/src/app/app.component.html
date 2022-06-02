@@ -1,5 +1,15 @@
 <!--This page wrapper allows for changes to be applied simultaneously across html/css-->
-<div class="pagewrapper">
-  <app-nav-bar></app-nav-bar>
-  <router-outlet></router-outlet>
+<div class="row">
+    <div class="col col-md-12">
+        <app-top-bar></app-top-bar>
+    </div>
+</div>
+<div class="row">
+
+    <div class="col col-md-2">
+        <app-nav-bar></app-nav-bar>
+    </div>
+    <div class="col col-md-10">
+        <router-outlet></router-outlet>
+    </div>
 </div>
