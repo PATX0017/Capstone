@@ -14,6 +14,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminPortalComponent } from './components/admin-portal/admin-portal.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { TopBarComponent } from './components/top-bar/top-bar.component';
 
 /*Export class landing page*/
 export class app {
@@ -23,14 +24,7 @@ export class app {
 
 const routes: Routes = [
 
-  { path: '', component: AdminPortalComponent },
-  { path: 'account/:id', component: LandingPageComponent },
-  { path: 'account/:id/savings', component: SavingsComponent },
-  { path: 'account/:id/checkings', component: CheckingsComponent },
-  { path: 'account/:id/deposit', component: DepositComponent },
-  { path: 'account/:id/withdraw', component: WithdrawalComponent },
-  { path: 'account/:id/profile', component: ProfileComponent },
-  { path: '**', redirectTo: '', pathMatch: 'full' }
+
 
 ]
 
@@ -50,6 +44,7 @@ const routes: Routes = [
     ProfileComponent,
     AdminPortalComponent,
     HomePageComponent,
+    TopBarComponent,
 
   ],
   imports: [
