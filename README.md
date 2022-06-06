@@ -100,11 +100,11 @@ Minimal usage requirements
     - [X] Create workflow
 - [ ] Back End Tasks
     - [ ] Creation
-     - [X] Database
-     - [X] APIs
-     - [X] Mapping
-     - [ ] Custom queries 
-     - [ ] Transaction tables
+          - [X] Database
+          - [X] APIs
+          - [X] Mapping
+          - [ ] Custom queries 
+          - [ ] Transaction tables
     - [ ] Join tables
     - [ ] Test through Postman
 - [ ] Front End Tasks
@@ -118,6 +118,15 @@ Minimal usage requirements
 - [ ] Quality Assurance
 - [ ] Add additional features
 - [ ] Presentation
+    - [X] Brainstorm announcement
+    - [X] Outline announcement
+    - [X] Select tools
+    - [X] Create Logo
+    - [X] Intro Video
+    - [X] Build up video
+    - [X] Reveal Video
+    - [ ] Submit videos for review
+    - [ ] 
     - [ ] Outline presentation
     - [ ] Add texting
     - [ ] Collect/add photos
