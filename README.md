@@ -100,11 +100,11 @@ Minimal usage requirements
     - [X] Create workflow
 - [ ] Back End Tasks
     - [ ] Creation
-      - [X] Database
-      - [X] APIs
-      - [X] Mapping
-      - [ ] Custom queries 
-      - [ ] Transaction tables
+     - [X] Database
+     - [X] APIs
+     - [X] Mapping
+     - [ ] Custom queries 
+     - [ ] Transaction tables
     - [ ] Join tables
     - [ ] Test through Postman
 - [ ] Front End Tasks
@@ -118,10 +118,10 @@ Minimal usage requirements
 - [ ] Quality Assurance
 - [ ] Add additional features
 - [ ] Presentation
-     - [ ] Outline presentation
-     - [ ] Add texting
-     - [ ] Collect/add photos
-     - [ ] Runthrough with team for proofreading
+    - [ ] Outline presentation
+    - [ ] Add texting
+    - [ ] Collect/add photos
+    - [ ] Runthrough with team for proofreading
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
