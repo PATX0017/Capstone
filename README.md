@@ -99,9 +99,14 @@ Minimal usage requirements
     - [X] Assign teams
     - [X] Create workflow
 - [ ] Back End Tasks
-    - [X] Create database
-    - [X] Create APIs
-    - [X] Create mapping
+    - [ ] Creation
+      - [X] Database
+      - [X] APIs
+      - [X] Mapping
+      - [ ] Custom queries 
+      - [ ] Transaction tables
+    - [ ] Join tables
+    - [ ] Test through Postman
 - [ ] Front End Tasks
     - [X] Create shell
     - [ ] Lets add more taskings for the road map
