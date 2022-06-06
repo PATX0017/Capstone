@@ -55,7 +55,7 @@
   </div>
 </div>
 -->
-
+<app-dashboard-links [accountNumber]="account.accountNumber"></app-dashboard-links>
 <!-- Page Wrapper -->
 <div id="wrapper">
 
@@ -91,13 +91,12 @@
                   <div class="col-auto">
 
                     <a routerLink="checkings">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
                         class="view-details-arrow" viewBox="0 0 16 16">
                         <path
                           d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                       </svg>
                     </a>
-                    <i class="fas fa-calendar fa-2x text-gray-300"></i>
                   </div>
                 </div>
               </div>
@@ -117,13 +116,13 @@
                   </div>
                   <div class="col-auto">
                     <a routerLink="savings">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
                         class="view-details-arrow" viewBox="0 0 16 16">
                         <path
                           d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                       </svg>
                     </a>
-                    <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+
                   </div>
                 </div>
               </div>
@@ -148,13 +147,13 @@
                   </div>
                   <div class="col-auto">
                     <a routerLink="deposit">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
                         class="view-details-arrow" viewBox="0 0 16 16">
                         <path
                           d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                       </svg>
                     </a>
-                    <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+
                   </div>
                 </div>
               </div>
@@ -174,14 +173,14 @@
                   <div class="col-auto">
 
                     <a routerLink="withdraw">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
                         class="view-details-arrow" viewBox="0 0 16 16">
                         <path
                           d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                       </svg>
                     </a>
 
-                    <i class="fas fa-comments fa-2x text-gray-300"></i>
+
                   </div>
                 </div>
               </div>
@@ -190,97 +189,70 @@
         </div>
 
         <div class="row">
+          <div class="col col-md-6" width="700px" height="400px">
 
 
-
-
-          <div class="row" style="padding-left: 36px">
-            <div class="col col-lg-6">
-              <!-- Area Chart -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Area Chart</h6>
-                </div>
-                <div class="card-body">
-                  <div class="chart-area">
-                    <canvas id="myAreaChart"></canvas>
-                  </div>
-                  <hr>
-                  Styling for the area chart can be found in the
-                  <code>/js/demo/chart-area-demo.js</code> file.
-                </div>
+            <!-- Area Chart -->
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Checkings Balance History</h6>
               </div>
-
-
-            </div>
-            <div class="col col-lg-6">
-              <!-- Area Chart -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Area Chart</h6>
+              <div class="card-body">
+                <div class="chart-container">
+                  <canvas id="my-chart1" width="700px" height="400px">
+                  </canvas>
                 </div>
-                <div class="card-body">
-                  <div class="chart-area">
-                    <canvas id="myAreaChart"></canvas>
-                  </div>
-                  <hr>
-                  Styling for the area chart can be found in the
-                  <code>/js/demo/chart-area-demo.js</code> file.
-                </div>
+                <hr>
+
               </div>
-
             </div>
+
+
           </div>
+          <div class="col col-md-6" width="700px" height="400px">
+            <!-- Area Chart -->
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Savings Balance History</h6>
+              </div>
+              <div class="card-body">
+                <div class="chart-container">
+                  <canvas id="my-chart2" width="700px" height="400px">
+                  </canvas>
+                </div>
+                <hr>
 
+              </div>
+            </div>
 
-
-
-
-
-
-        </div>
-        <!-- /.container-fluid -->
-
-      </div>
-      <!-- End of Main Content -->
-
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Capiche Code 2020</span>
           </div>
         </div>
-      </footer>
-      <!-- End of Footer -->
+
+
+
+
+
+
+
+
+      </div>
+      <!-- /.container-fluid -->
 
     </div>
-    <!-- End of Content Wrapper -->
+    <!-- End of Main Content -->
 
-  </div>
-  <!-- End of Page Wrapper -->
-
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-
-  <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
+    <!-- Footer -->
+    <footer class="sticky-footer bg-white">
+      <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+          <span>Copyright &copy; Capiche Code 2020</span>
         </div>
       </div>
-    </div>
+    </footer>
+    <!-- End of Footer -->
+
   </div>
+  <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->

@@ -1,23 +1,24 @@
+<app-dashboard-links [accountNumber]="account.accountNumber"></app-dashboard-links>
 <form class="row gy-2 gx-3 align-items-center">
-    <div class="mb-3">
-        <label for="selectbankaccountype" class="bankaccounttype">1. Please select an account to deposit funds:</label>
-        <div class="col-auto">
-            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-            <select class="form-select" id="autoSizingSelect">
-              <option selected>Please Select Option...</option>
-              <option value="1">Checking</option>
-              <option value="2">Savings</option>
-            </select>
-          </div>
-    </div>
-    <div class="mb-3">
-        <label for="amounttodeposit" class="amounttodesposit">2. Please enter deposit amount:</label>
-        <div class="col-auto">
-            <label class="visually-hidden" for="autoSizingInput">Deposit Amount</label>
-            <input type="text" class="form-control" id="autoSizingInput" placeholder="Enter amount here...">
-          </div>
-    </div>
+  <div class="mb-3">
+    <label for="selectbankaccountype" class="bankaccounttype">1. Please select an account to deposit funds:</label>
     <div class="col-auto">
-      <button type="deposit" class="btn btn-primary">Deposit</button>
+      <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+      <select class="form-select" id="autoSizingSelect">
+        <option selected>Please Select Option...</option>
+        <option value="1">Checking</option>
+        <option value="2">Savings</option>
+      </select>
     </div>
+  </div>
+  <div class="mb-3">
+    <label for="amounttodeposit" class="amounttodesposit">2. Please enter deposit amount:</label>
+    <div class="col-auto">
+      <label class="visually-hidden" for="autoSizingInput">Deposit Amount</label>
+      <input type="text" class="form-control" id="autoSizingInput" placeholder="Enter amount here...">
+    </div>
+  </div>
+  <div class="col-auto">
+    <button type="deposit" class="btn btn-primary">Deposit</button>
+  </div>
 </form>

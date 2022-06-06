@@ -1,13 +1,50 @@
-<div class="checking-balance-container">
-    <div class="row row-cols-2" id="lpcontainer">
-        <div class="col">
-            <div class="checkingbalance">Checking Balance: {{account.balance | currency: 'USD'}}</div>
-            <div class="viewdetailspb">View Details<a routerLink="checkings"><svg xmlns="http://www.w3.org/2000/svg"
-                        width="16" height="16" fill="currentColor" class="view-details-arrow" viewBox="0 0 16 16">
-                        <path
-                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                    </svg></a>
-            </div>
+<app-dashboard-links [accountNumber]="account.accountNumber"></app-dashboard-links>
+<!--Account Info Card-->
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Account Information</h6>
+    </div>
+    <div class="card-body">
+
+    </div>
+
+</div>
+<!--End Account Info Card-->
+
+<!-- Transaction Table -->
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">User Accounts</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Account Number</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Account Number</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>adsfdsf</td>
+                        <td>sadfdsfa</td>
+                        <td>afsdfadsf</td>
+                    </tr>
+
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
+<!--End Transaction Table-->
