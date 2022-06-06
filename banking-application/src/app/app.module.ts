@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AdminPortalComponent } from './components/admin-portal/admin-portal.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 /*Export class landing page*/
 export class app {
@@ -45,6 +46,7 @@ const routes: Routes = [
     AdminPortalComponent,
     HomePageComponent,
     TopBarComponent,
+    PageNotFoundComponent,
 
   ],
   imports: [

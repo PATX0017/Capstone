@@ -25,6 +25,7 @@ public class BankAccount {
 	@Column(name = "balance")
 	private Long balance;
 	
+	
 
 	public Long getAccountNumber() {
 		return accountNumber;
