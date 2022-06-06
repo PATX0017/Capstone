@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="/account/{{accountNumber}}"
+                    routerLinkActive="active">Dashboard</a></li>
+            <li *ngIf="hasRoute('checkings')" ng class="breadcrumb-item">
+                Checkings</li>
+            <li *ngIf="hasRoute('savings')" class="breadcrumb-item">Savings</li>
+            <li *ngIf="hasRoute('deposit')" class="breadcrumb-item">Deposit</li>
+            <li *ngIf="hasRoute('withdraw')" class="breadcrumb-item">Withdraw</li>
+        </ol>
+    </nav>
+</div>

@@ -1,34 +1,25 @@
-<!-- 
+<!-- Top Bar-->
 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-        <i class="fa fa-bars"></i>
-    </button>
-
-  
     <ul class="navbar-nav">
-        <li class="nav-items">
+        <li class="nav-item">
             <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
         </li>
-        <li class="nav-items">
+        <li class="nav-item">
             <a class="nav-link" routerLink="/admin" routerLinkActive="active">Admin Portal</a>
-        </li>
-        <li *ngIf="router.url != '/admin' && router.url != '/home'" class="nav-items">
-            <a class="nav-link" routerLink="/account/{{account.accountNumber}}" routerLinkActive="active">Account
-                Dashboard</a>
         </li>
     </ul>
 
 
     <ul class="navbar-nav ml-auto">
 
-  
+
         <li class="nav-item dropdown no-arrow d-sm-none">
             <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-search fa-fw"></i>
             </a>
-         
+
             <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
                 aria-labelledby="searchDropdown">
                 <form class="form-inline mr-auto w-100 navbar-search">
@@ -47,52 +38,5 @@
     </ul>
 
 </nav>
--->
+
 <!-- End of Topbar -->
-<nav class="navbar navbar-expand navbar-light bg-white mb-4 static-top shadow">
-    <div class="container-fluid">
-        <a class="navbar-brand">Bank</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-
-
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" routerLink="/home" routerLinkActive="active">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/admin" routerLinkActive="active">Admin Portal</a>
-                </li>
-                <span *ngIf="router.url != '/admin' && router.url != '/home'">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" routerLinkActive="active" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Account Dashboard
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                            aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" routerLink="/account/1">Dashboard</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" routerLink="/account/1/checkings">Checkings</a></li>
-                            <li><a class="dropdown-item" routerLink="/account/1/savings">Savings</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" routerLink="/account/1/deposit">Deposit</a></li>
-                            <li><a class="dropdown-item" routerLink="/account/1/withdraw">Withdraw</a></li>
-                        </ul>
-
-                    </li>
-                </span>
-
-            </ul>
-
-        </div>
-    </div>
-</nav>
