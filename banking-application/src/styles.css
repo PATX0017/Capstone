@@ -581,6 +581,10 @@ pre code {
     word-break: normal;
 }
 
+.hide-sidebar {
+    display: none;
+}
+
 .pre-scrollable {
     max-height: 340px;
     overflow-y: scroll;
