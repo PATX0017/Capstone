@@ -2,7 +2,7 @@
 <br />
 <div align="center">
 
-<h3 align="center">Teller's Online Banking Software</h3>
+<h3 align="center">ABACUS</h3>
   <img src="https://www.techfunnel.com/wp-content/uploads/2019/07/12-Digital-Banking-Challenges-and-Opportunities-For-the-Banking-Industry-1.png">
 
   <p align="center">
