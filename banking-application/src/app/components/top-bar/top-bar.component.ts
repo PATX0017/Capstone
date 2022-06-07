@@ -12,19 +12,12 @@ export class TopBarComponent implements OnInit {
 
   account = new Account();
 
-  constructor(private bankService: BankService,
-    private route: ActivatedRoute,
+  constructor(
     public router: Router) { }
 
   ngOnInit(): void {
-    this.getAccountInfo();
-  }
-
-  getAccountInfo() {
-    const numbers: number = +this.route.snapshot.paramMap.get('id')!;
-    console.log(numbers);
-    this.bankService.getSpecificAccount(numbers).subscribe(res => { this.account = res });
 
   }
+
 
 }

@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { Account } from 'src/app/common/account';
-import { BankService } from 'src/app/services/bank.service';
+import { Router } from '@angular/router';
+
 
 
 
@@ -14,8 +13,7 @@ export class DashboardLinksComponent implements OnInit {
 
   @Input() accountNumber!: number;
 
-  constructor(private bankService: BankService,
-    private route: ActivatedRoute,
+  constructor(
     public router: Router) { }
 
   ngOnInit(): void {
