@@ -17,6 +17,7 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { DashboardLinksComponent } from './components/dashboard-links/dashboard-links.component';
+import { AddClientComponent } from './components/add-client/add-client.component';
 
 /*Export class landing page*/
 export class app {
@@ -49,6 +50,7 @@ const routes: Routes = [
     TopBarComponent,
     PageNotFoundComponent,
     DashboardLinksComponent,
+    AddClientComponent,
 
   ],
   imports: [

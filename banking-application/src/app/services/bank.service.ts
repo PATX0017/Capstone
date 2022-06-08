@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class BankService {
 
+
   account!: Account;
   baseUrl: string = "http://localhost:8080/"
 
@@ -20,5 +21,9 @@ export class BankService {
 
   getSpecificAccount(accNum: number): Observable<Account> {
     return this.httpClient.get<Account>(this.baseUrl + "account/" + accNum);
+  }
+
+  addAccount(account: Account) {
+    return this.httpClient.post<Account>(this.baseUrl + "add_account", account);
   }
 }
