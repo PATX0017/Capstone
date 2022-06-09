@@ -104,7 +104,7 @@ Minimal usage requirements
           - [X] APIs
           - [X] Mapping
     - [X] Test through Postman
-- [ ] Front End Tasks
+- [X] Front End Tasks
     - [X] Create shell
     - [X] Manipulate Data
     - [X] Clean up UI
