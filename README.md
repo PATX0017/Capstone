@@ -11,7 +11,7 @@
     ·
     <a href="https://movitees.com/shop2/evil-corp-t-shirt">2nd link</a>
     ·
-    <a href="https://www.thebalance.com/three-advantages-of-online-banking-2385804">Benefits</a>
+    <a href="https://bok.ahima.org/codingstandards#.YqIxg-zMKUk">Coding Ethics</a>
   </p>
 </div>
 
