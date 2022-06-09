@@ -16,6 +16,7 @@ public class BankService {
 	
 	public BankAccount getBankAccount(Long accountNumber) {
 		return repository.findById(accountNumber).get();
+	
 	}
 	
 	public List<BankAccount> getAllBankAccounts() {
@@ -25,5 +26,7 @@ public class BankService {
 	public BankAccount addBankAccount(BankAccount bankAccount) {
 		return repository.save(bankAccount);
 	}
+
+	
 
 }

@@ -24,7 +24,7 @@ export class LandingPageComponent implements OnInit {
       this.account = res;
 
     });
-    this.createChart1(1, 2, 3);
+    this.createChart1();
     this.createChart2();
 
   }
@@ -32,15 +32,15 @@ export class LandingPageComponent implements OnInit {
 
 
 
-  createChart1(num1: number, num2: number, num3: number): void {
+  createChart1(): void {
     Chart.register(...registerables);
     const data = {
-      labels: ['January', 'February', 'March', 'April', 'May', ''],
+      labels: ['January', 'February', 'March', 'April', 'May'],
       datasets: [{
         label: 'Savings Account Growth',
         backgroundColor: 'rgb(28, 200, 137)',
         borderColor: 'rgb(28, 200, 137)',
-        data: [num1, num2, num3, 20, 30, 45],
+        data: [3, 4, 5, 20, 30, 45],
       }]
 
     };
@@ -88,9 +88,5 @@ export class LandingPageComponent implements OnInit {
     const chartItem: ChartItem = document.getElementById('my-chart1') as ChartItem
     new Chart(chartItem, config)
   }
-
-
-  depositModal() {
-
-  }
 }
+

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddClientComponent } from './components/add-client/add-client.component';
 import { AdminPortalComponent } from './components/admin-portal/admin-portal.component';
 import { CheckingsComponent } from './components/checkings/checkings.component';
 import { DepositComponent } from './components/deposit/deposit.component';
@@ -18,6 +19,7 @@ import { WithdrawalComponent } from './components/withdrawal/withdrawal.componen
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
   { path: 'admin', component: AdminPortalComponent },
+  { path: 'new_client', component: AddClientComponent },
   { path: 'account/:id', component: LandingPageComponent },
   { path: 'account/:id/savings', component: SavingsComponent },
   { path: 'account/:id/checkings', component: CheckingsComponent },

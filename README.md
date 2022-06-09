@@ -2,7 +2,7 @@
 <br />
 <div align="center">
 
-<h3 align="center">Teller's Online Banking Software</h3>
+<h3 align="center">ABACUS</h3>
   <img src="https://www.techfunnel.com/wp-content/uploads/2019/07/12-Digital-Banking-Challenges-and-Opportunities-For-the-Banking-Industry-1.png">
 
   <p align="center">
@@ -99,9 +99,14 @@ Minimal usage requirements
     - [X] Assign teams
     - [X] Create workflow
 - [ ] Back End Tasks
-    - [X] Create database
-    - [X] Create APIs
-    - [X] Create mapping
+    - [ ] Creation
+          - [X] Database
+          - [X] APIs
+          - [X] Mapping
+          - [ ] Custom queries 
+          - [ ] Transaction tables
+    - [ ] Join tables
+    - [ ] Test through Postman
 - [ ] Front End Tasks
     - [X] Create shell
     - [ ] Lets add more taskings for the road map
@@ -113,10 +118,19 @@ Minimal usage requirements
 - [ ] Quality Assurance
 - [ ] Add additional features
 - [ ] Presentation
-     - [ ] Outline presentation
-     - [ ] Add texting
-     - [ ] Collect/add photos
-     - [ ] Runthrough with team for proofreading
+    - [X] Brainstorm announcement
+    - [X] Outline announcement
+    - [X] Select tools
+    - [X] Create Logo
+    - [X] Intro Video
+    - [X] Build up video
+    - [X] Reveal Video
+    - [ ] Submit videos for review
+    - [ ] 
+    - [ ] Outline presentation
+    - [ ] Add texting
+    - [ ] Collect/add photos
+    - [ ] Runthrough with team for proofreading
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
