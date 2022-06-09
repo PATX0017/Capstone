@@ -65,19 +65,6 @@
 
 
 
-## Getting Started
-
-A basic understanding of Java, Angular, HTML, and AWS will be needed to edit, launch, and navigate ABACUS. 
-
-### Installation
-
-Account information will be stored locally using MySQL. Eclipse will be running the back end while the user can access the website on port 4200.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-
 ## Usage
 
 Minimal usage requirements
