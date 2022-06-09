@@ -45,7 +45,7 @@
 
 ## About The Project
 
- ABACUS is inteded software for banking employees to use to process customer actions such as view balance, make deposits, withdrawl specified amounts, etc.
+ ABACUS is inteded software for banking employees to use processing customer actions such as view balance, make deposits, withdrawl specified amounts, etc.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
