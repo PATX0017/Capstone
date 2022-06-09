@@ -45,7 +45,7 @@
 
 ## About The Project
 
- Capstone project for Xpanxion. Online banking app for tellers to use. yada, yada, yada, etc...
+ ABACUS is inteded software for banking employees to use to process customer actions such as view balance, make deposits, withdrawl specified amounts, etc.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -67,12 +67,7 @@
 
 ## Getting Started
 
-Account information will be stored locally using MySQL. Eclipse will be running the back end while the user can access the website on port 4200.
-
-### Prerequisites
-
-Account information will be stored locally using MySQL. Eclipse will be running the back end while the user can access the website on port 4200.
-
+A basic understanding of Java, Angular, HTML, and AWS will be needed to edit, launch, and navigate ABACUS. 
 
 ### Installation
 
@@ -108,12 +103,12 @@ Minimal usage requirements
     - [X] Create shell
     - [X] Manipulate Data
     - [X] Clean up UI
-- [ ] DevOps Tasks
+- [X] DevOps Tasks
     - [X] Create repositories
     - [X] Send invites for collabs
 - [X] Quality Assurance
 - [ ] Add additional features
-- [ ] Presentation
+- [X] Presentation
     - [X] Brainstorm announcement
     - [X] Outline announcement
     - [X] Select tools
@@ -122,11 +117,10 @@ Minimal usage requirements
     - [X] Build up video
     - [X] Reveal Video
     - [X] Submit videos for review
-    - [ ] 
-    - [X] Outline presentation
-    - [ ] Add texting
-    - [ ] Collect/add photos
-    - [ ] Runthrough with team for proofreading
+    - [X] Outline presentation PowerPoint
+    - [X] Add texting
+    - [X] Collect/add photos
+    - [X] Runthrough with team for proofreading
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -150,14 +144,8 @@ Minimal usage requirements
 * Sudha Potla
 
 Typical roles such as Business Anaylst, Project Manager, Team Leader, & Quality Assurance were truncated at meeting zero. It was decided by the group to just form front end, back end, and dev ops teams. 
+
 Don't forget to give the project a star!
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-## License
-
-Do we even need this License section?
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -165,8 +153,8 @@ Do we even need this License section?
 ## Contact
 
 * Jon - jrodriguez-castillo@xpanxion.com
-* Anatalio - anickles@xpanxion.com
 * Shakeah - smitchell@xpanxion.com
+* Anatalio - anickles@xpanxion.com
 * Justice - jengle@xpanxion.com
 * Tomas - tcarrillo@xpanxion.com
 * Justin - jpalso@xpanxion.com
@@ -183,9 +171,11 @@ Cohort Manager: Veroinca Cisneros - vcisneros@xpanxion.com
 
 ## Acknowledgments
 
+This application was built as an assignment for Xpanxion's Step It Up America (SIUA) Apprenticship Program. Special thanks to DCI Resources, LLC for their training in Full Stack Development.
+
 * Pooja Purohit
-* Maleeha
-* Krishna
+* Maleeha Javed
+* Krishna Outram
 * Kevin Conlay
 
 <p align="right">(<a href="#top">back to top</a>)</p>
