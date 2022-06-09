@@ -98,24 +98,20 @@ Minimal usage requirements
     - [X] Create features list
     - [X] Assign teams
     - [X] Create workflow
-- [ ] Back End Tasks
-    - [ ] Creation
+- [X] Back End Tasks
+    - [X] Creation
           - [X] Database
           - [X] APIs
           - [X] Mapping
-          - [ ] Custom queries 
-          - [ ] Transaction tables
-    - [ ] Join tables
-    - [ ] Test through Postman
+    - [X] Test through Postman
 - [ ] Front End Tasks
     - [X] Create shell
-    - [ ] Lets add more taskings for the road map
-    - [ ] Clean up UI
+    - [X] Manipulate Data
+    - [X] Clean up UI
 - [ ] DevOps Tasks
     - [X] Create repositories
     - [X] Send invites for collabs
-    - [ ] Lets add more taskings for the road map
-- [ ] Quality Assurance
+- [X] Quality Assurance
 - [ ] Add additional features
 - [ ] Presentation
     - [X] Brainstorm announcement
@@ -125,9 +121,9 @@ Minimal usage requirements
     - [X] Intro Video
     - [X] Build up video
     - [X] Reveal Video
-    - [ ] Submit videos for review
+    - [X] Submit videos for review
     - [ ] 
-    - [ ] Outline presentation
+    - [X] Outline presentation
     - [ ] Add texting
     - [ ] Collect/add photos
     - [ ] Runthrough with team for proofreading
