@@ -9,7 +9,7 @@
     <br />
     <a href="https://www.google.com/search?q=hi+alex!&sxsrf=APq-WBveHwk7TQkUhLdjIJ-ZS-DF2I0wTQ:1649436844712&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiMmNWJ94T3AhXNkmoFHVejA_cQ_AUoAXoECAIQAw&biw=1920&bih=899&dpr=1">1st link</a>
     ·
-    <a href="https://movitees.com/shop2/evil-corp-t-shirt">2nd link</a>
+    <a href="https://corporatefinanceinstitute.com/resources/knowledge/finance/ethical-banking/">Banking Ethics</a>
     ·
     <a href="https://bok.ahima.org/codingstandards#.YqIxg-zMKUk">Coding Ethics</a>
   </p>
