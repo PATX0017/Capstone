@@ -143,7 +143,7 @@ Minimal usage requirements
 * Justin Palso
 * Sudha Potla
 
-Typical roles such as Business Anaylst, Project Manager, Team Leader, & Quality Assurance were truncated at meeting zero. It was decided by the group to just form front end, back end, and dev ops teams. 
+Typical roles such as Business Anaylst, Project Manager, Team Leader, & Quality Assurance were replaced at meeting zero. It was decided by the group to form front end, back end, and dev ops teams. 
 
 Don't forget to give the project a star!
 
@@ -171,7 +171,7 @@ Cohort Manager: Veroinca Cisneros - vcisneros@xpanxion.com
 
 ## Acknowledgments
 
-This application was built as an assignment for Xpanxion's Step It Up America (SIUA) Apprenticship Program. Special thanks to DCI Resources, LLC for their training in Full Stack Development.
+This application was built as a capstone project for Xpanxion's Step It Up America (SIUA) Apprenticship Program. Special thanks to DCI Resources, LLC for their training in Full Stack Development.
 
 * Pooja Purohit
 * Maleeha Javed
