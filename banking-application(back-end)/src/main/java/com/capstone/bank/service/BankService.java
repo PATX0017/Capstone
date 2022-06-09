@@ -26,7 +26,30 @@ public class BankService {
 	public BankAccount addBankAccount(BankAccount bankAccount) {
 		return repository.save(bankAccount);
 	}
-
 	
+	public BankAccount depositCheckingsAcc(Long amount, BankAccount bankAcc) {
+		BankAccount bank = repository.findById(bankAcc.getAccountNumber()).get();
+		
+		bank.setCheckingsBalance(bank.getCheckingsBalance() + amount);
+		return repository.save(bank);
+	}
+	
+	public BankAccount depositSavingsAcc(Long amount, BankAccount bankAcc) {
+		BankAccount bank = repository.findById(bankAcc.getAccountNumber()).get();
+		bank.setSavingsBalance(bank.getSavingsBalance() + amount);
+		return repository.save(bank);
+	}
+	
+	public BankAccount withdrawCheckingsAcc(Long amount, BankAccount bankAcc) {
+		BankAccount bank = repository.findById(bankAcc.getAccountNumber()).get();
+		bank.setCheckingsBalance(bank.getCheckingsBalance() - amount);
+		return repository.save(bank);
+	}
+	
+	public BankAccount withdrawSavingsAcc(Long amount, BankAccount bankAcc) {
+		BankAccount bank = repository.findById(bankAcc.getAccountNumber()).get();
+		bank.setSavingsBalance(bank.getSavingsBalance() - amount);
+		return repository.save(bank);
+	}
 
 }

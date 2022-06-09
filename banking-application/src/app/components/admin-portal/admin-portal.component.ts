@@ -11,9 +11,12 @@ import { Observable } from 'rxjs';
 export class AdminPortalComponent implements OnInit {
 
   accounts$!: Observable<Account[]>;
+
   constructor(private bankService: BankService) { }
 
   ngOnInit(): void {
+
+    //On initialization of the component, call the service method to load User Account Data and Assign it to accounts$.
     this.accounts$ = this.bankService.getAccountInfo();
   }
 

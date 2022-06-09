@@ -14,22 +14,27 @@
                                 <br>
                                 <br>
                                 <br>
+
+
                                 <h1 class="h4 text-gray-900 mb-4">Add New Client</h1>
                             </div>
-                            <form class="user" (submit)="addClient(account)">
+                            <!-- Form to Add New Client to Database-->
+                            <form class="user">
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
+
                                         <input type="text" class="form-control form-control-user" id="firstName"
-                                            name="firstName" placeholder="First Name" (ngModel)="account.lastName">
+                                            name="firstName" placeholder="First Name" [(ngModel)]="account.firstName">
                                     </div>
                                     <div class="col-sm-6">
                                         <input type="text" class="form-control form-control-user" id="lastName"
-                                            name="lastName" placeholder="Last Name" (ngModel)="account.lastName">
+                                            name="lastName" placeholder="Last Name" [(ngModel)]="account.lastName">
                                     </div>
                                 </div>
-
-                                <button type="submit" class="btn btn-primary btn-user btn-block">
-                                    Register Account
+                                <!-- Calls Service to add Account to the Database and Reroutes back to Admin Portal-->
+                                <button (click)="addClient()" [routerLink]="['/admin']" type="submit"
+                                    class="btn btn-primary btn-user btn-block">
+                                    Add New Client
                                 </button>
 
                             </form>

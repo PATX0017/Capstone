@@ -22,10 +22,17 @@ public class BankAccount {
 	@Column(name = "last_name")
 	private String lastName;
 	
-	@Column(name = "balance")
-	private Long balance;
+	@Column(name = "checkings_balance")
+	private Long checkingsBalance;
+
+	@Column(name = "savings_balance")
+	private Long savingsBalance;
 	
-	
+	public BankAccount() {
+		
+		this.checkingsBalance = (long) 0;
+		this.savingsBalance = (long) 0;
+	}
 
 	public Long getAccountNumber() {
 		return accountNumber;
@@ -51,13 +58,22 @@ public class BankAccount {
 		this.lastName = lastName;
 	}
 
-	public Long getBalance() {
-		return balance;
+	public Long getCheckingsBalance() {
+		return checkingsBalance;
 	}
 
-	public void setBalance(Long balance) {
-		this.balance = balance;
+	public void setCheckingsBalance(Long checkingsBalance) {
+		this.checkingsBalance = checkingsBalance;
 	}
+
+	public Long getSavingsBalance() {
+		return savingsBalance;
+	}
+
+	public void setSavingsBalance(Long savingsBalance) {
+		this.savingsBalance = savingsBalance;
+	}
+
 
 	
 

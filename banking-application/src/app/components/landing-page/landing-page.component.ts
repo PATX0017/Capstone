@@ -17,30 +17,31 @@ export class LandingPageComponent implements OnInit {
   constructor(private bankService: BankService,
     private route: ActivatedRoute) { }
 
+
+  //on initialization execute method to recieve specific user data from the database. The Id is taken from the URL to get that specific account's data. On initialization call helper method to generate doughnut chart.
   ngOnInit(): void {
-    //accounts/:id = account/2
     const number: number = +this.route.snapshot.paramMap.get('id')!;
     this.bankService.getSpecificAccount(number).subscribe(res => {
       this.account = res;
+      this.createChart1(this.account.checkingsBalance, this.account.savingsBalance);
 
     });
-    this.createChart1();
-    this.createChart2();
+
 
   }
 
 
+  //Doughnut chart helper method. Generates chart using chart.js. Takes user data from database as a parameter to display the balances.
 
-
-  createChart1(): void {
+  createChart1(checkings: number, savings: number): void {
     Chart.register(...registerables);
     const data = {
-      labels: ['January', 'February', 'March', 'April', 'May'],
+      labels: ['Checkings', 'Savings'],
       datasets: [{
-        label: 'Savings Account Growth',
-        backgroundColor: 'rgb(28, 200, 137)',
-        borderColor: 'rgb(28, 200, 137)',
-        data: [3, 4, 5, 20, 30, 45],
+        label: 'Account Distribution',
+        backgroundColor: ['rgb(78, 114, 223)', 'rgb(28, 200, 137)'],
+        borderColor: ['rgb(78, 114, 223)', 'rgb(28, 200, 137)'],
+        data: [checkings, savings],
       }]
 
     };
@@ -53,40 +54,14 @@ export class LandingPageComponent implements OnInit {
       }
     }
     const config: ChartConfiguration = {
-      type: 'line',
+      type: 'doughnut',
       data: data,
       options: options
     }
     const chartItem: ChartItem = document.getElementById('my-chart2') as ChartItem
     new Chart(chartItem, config)
   }
-  createChart2(): void {
-    Chart.register(...registerables);
-    const data = {
-      labels: ['January', 'February', 'March', 'April', 'May'],
-      datasets: [{
-        label: 'Checkings Account Growth',
-        backgroundColor: 'rgb(78, 114, 223)',
-        borderColor: 'rgb(78, 114, 223)',
-        data: [10, 5, 2, 20, 30, 45],
-      }]
 
-    };
-    const options = {
-      scales: {
-        y: {
-          beginAtZero: true,
-          display: false
-        }
-      }
-    }
-    const config: ChartConfiguration = {
-      type: 'line',
-      data: data,
-      options: options
-    }
-    const chartItem: ChartItem = document.getElementById('my-chart1') as ChartItem
-    new Chart(chartItem, config)
-  }
+
 }
 
